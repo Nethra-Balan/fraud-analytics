@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lato:wght@400;700;900&display=swap');
+:root { --ink:#17212b; --muted:#667482; --teal:#1c8c83; --red:#dc5a4f; --cream:#f6f7f4; --line:#dfe5e3; }
+body { background:var(--cream); color:var(--ink); font-family:'DM Sans',sans-serif; }
+.app-shell { max-width:1500px; margin:auto; padding:26px 34px 44px; }
+.app-header { display:flex; justify-content:space-between; gap:24px; align-items:flex-end; margin-bottom:24px; }
+.eyebrow { color:var(--teal); text-transform:uppercase; letter-spacing:2px; font-size:11px; font-weight:700; }
+h1 { font-family:'Lato',sans-serif; font-size:34px; margin:5px 0 4px; letter-spacing:0; }
+.subtitle { color:var(--muted); margin:0; max-width:690px; }
+.header-note { font-size:12px; color:var(--muted); text-align:right; }
+.nav-tabs { border:0; margin-bottom:18px; } .nav-tabs>li>a { color:var(--muted); border:0!important; border-bottom:3px solid transparent!important; font-weight:700; } .nav-tabs>li.active>a { background:transparent!important; color:var(--ink); border-bottom-color:var(--teal)!important; }
+.sidebar { background:white; border:1px solid var(--line); border-radius:8px; padding:20px; box-shadow:0 5px 18px rgba(23,33,43,.04); }
+.sidebar h4 { font-family:'Lato'; font-weight:900; margin-top:0; } .control-label { font-size:12px; color:var(--muted); }
+.main-panel { min-height:500px; } .section-title { font-family:'Lato'; font-weight:900; font-size:20px; margin:4px 0 16px; }
+.kpi-row { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:18px; }
+.kpi { background:white; border:1px solid var(--line); border-top:4px solid var(--teal); border-radius:8px; padding:16px 18px; box-shadow:0 5px 18px rgba(23,33,43,.04); } .kpi.fraud { border-top-color:var(--red); }
+.kpi-label { color:var(--muted); font-size:12px; } .kpi-value { font-family:'Lato'; font-size:27px; font-weight:900; margin-top:5px; }
+.viz-card { background:white; border:1px solid var(--line); border-radius:8px; padding:13px; margin-bottom:16px; } .viz-card h4 { margin:4px 8px 10px; font-family:'Lato'; font-weight:900; }
+.finding { background:#e6f1ed; border-left:4px solid var(--teal); padding:14px 17px; border-radius:4px; color:#274740; margin:4px 0 18px; }
+.empty-state { background:#fff7ed; border:1px solid #efc58c; color:#865a1d; border-radius:6px; padding:28px; text-align:center; margin:20px 0; }
+.table-wrap { background:white; border:1px solid var(--line); border-radius:8px; padding:16px; } .dataTables_wrapper { font-size:12px; }
+@media (max-width:850px) { .app-shell{padding:18px 14px}.app-header{display:block}.header-note{text-align:left;margin-top:10px}.kpi-row{grid-template-columns:repeat(2,1fr)} }
